@@ -13,4 +13,4 @@ RUN apt-get update && \
         pkg-config \
         unzip && \
         git clone https://github.com/neovim/neovim /neovim && \
-        cd /neovim && make CMAKE_BUILD_TYPE=Release && make CMAKE_INSTALL_PREFIX=/nvim install
+        cd /neovim && make CMAKE_BUILD_TYPE=Release && make CMAKE_INSTALL_PREFIX=/nvim install && rm -rf /neovim
